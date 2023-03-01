@@ -1,0 +1,871 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>MB Assets, Informacion Financiera Bursatil</title>
+      <!-- favicon -->
+      <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/x-icon">
+      <!-- bootstrap css -->
+      
+      <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+      <!-- fontawesome css -->
+      <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+      <!-- fontawesome css -->
+      <link rel="stylesheet" href="{% static 'css/fontawesome.min.css' %}">
+      <!-- owl carousel css -->
+      <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+      <!-- owl carousel theme css -->
+      <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+      <!-- slicknav css -->
+      <link rel="stylesheet" href="{% static 'css/slicknav.css' %}">
+      <!-- animate css -->
+      <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+      <!-- main css -->
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+      <!-- responsive css -->
+      <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+      <!-- jquery js -->
+      <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+   </head>
+   
+   
+   
+   <body>
+      <!--   header area start   -->
+      <div class="header-area home-3">
+         <div class="info-bar">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-6">
+                     <div class="contact-infos">
+                        <div class="email">
+                           <div class="icon-wrapper"><i class="flaticon-call"></i></div>
+                           <div>+ 549 11 xxx xxx</div>
+                        </div>
+                        <div class="phone">
+                           <div class="icon-wrapper"><i class="flaticon-email"></i></div>
+                           <div>Support@mail.com</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="right-content">
+                        <ul class="social-links">
+                           <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                           <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                           <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        </ul>
+                        <div class="language">
+                           <a href="#" class="dropdown-btn">Lenguaje <i class="flaticon-down-arrow"></i></a>
+                           <ul class="language-dropdown">
+                              <li>
+                                 <a href="#">English</a>
+                              </li>
+                              <li>
+                                 <a href="#">Español</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="support-nav-area">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-3 col-6">
+                     <div class="logo-wrapper">
+                        <div class="logo-wrapper-inner">
+                           <a href="index.html"><img src="{% static 'img/logo-3.png' %}" alt=""></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-9 col-6 position-static">
+                     <div class="navbar-area">
+                        <div class="row">
+                           <div class="col-12 position-static">
+                              <nav class="main-menu" id="mainMenuHome3">
+                                 <ul>
+                                                                        <li>
+                                       <a href="#preg2">Inicio</a>
+                                    </li>
+                                    
+
+                                    <li class="dropdown">
+                                       <a href="#">Servicios</a>
+                                       <ul>
+                                          <li><a href="bajo.html">Perfil de bajo riesgo</a></li>
+                                          <li><a href="medio.html">Perfil de riesgo moderado</a></li>
+                                          <li><a href="alto.html">Perfil de riesgo alto</a></li>
+                                       </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                       <a href="#">Noticias</a>
+                                       <ul>
+                                          <li><a href="blogs.html">Educativo</a></li>
+                                          <li><a href="blog-grid.html">Indices</a></li>
+                                          <li><a href="blog-grid-sidebar.html">Mercados Bursatiles</a></li>
+                                          <li><a href="Cripto.html">Criptomercado</a></li>
+                                          <li><a href="blog-details.html">informacion de valor</a></li>
+                                       </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                       <a href="test.html">Test de Aversión Free!</a>
+                                       <ul>
+                                          <li><a href="test.html">¡Realizar Test de Aversión en 5 minutos!</a></li>
+
+                                       </ul>
+                                    </li>
+                              </nav>
+                              <div id="mobileMenuHome3"></div>
+                              <ul class="search-cart-area">
+                                 <li class="search-icon"><a href="#"><i class="flaticon-search"></i></a></li>
+                                 <li class="shopping-icon">
+                                    <a href="#"><i class="flaticon-shopping-cart-black-shape"></i></a>
+                                    <span class="count">0</span>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--   header area end   -->
+      
+      
+      <!--   search bar popup start   -->
+      <div class="search-popup">
+         <form class="search-form" action="#">
+            <div class="form-element"><input type="text" placeholder="Type your search keyword"></div>
+         </form>
+         <div class="search-popup-overlay" id="searchOverlay"></div>
+         <button class="search-close-btn" id="searchCloseBtn"><i class="fas fa-times"></i></button>
+      </div>
+      <!--   search bar popup end   -->  
+      
+      
+      <!--  hero area start  -->
+      <div class="hero-area home-3 home-6">
+         <div class="hero-carousel owl-carousel owl-theme">
+            <div class="single-hero-item hero-bg-3">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-6 col-lg-8">
+                        <div class="hero-txt">
+                           <span>MB Assets</span>
+                           <h1>Test de Aversion al riesgo</h1>
+                           
+                           <a href="services.html" class="boxed-btn"><span>¡Comenzar ahora!</span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="hero-overlay"></div>
+            </div>
+            <div class="single-hero-item hero-bg">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-6 col-lg-8">
+                        <div class="hero-txt">
+                           <span>We are transpix</span>
+                           <h1>No# 1 solution for transport</h1>
+                           <a href="services.html" class="boxed-btn"><span>SEE SERVICES</span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="hero-overlay"></div>
+            </div>
+            <div class="single-hero-item hero-bg-2">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-6 col-lg-8">
+                        <div class="hero-txt">
+                           <span>We are transpix</span>
+                           <h1>No# 1 solution for transport</h1>
+                           <a href="services.html" class="boxed-btn"><span>SEE SERVICES</span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="hero-overlay"></div>
+            </div>
+         </div>
+      </div>
+      <!--  hero area end  -->
+      
+      
+      <!--   cta section start    -->
+      <div class="cta-section home-2">
+         <div class="container">
+            <div class="cta-container">
+               <div class="row align-items-center">
+                  <div class="col-lg-9">
+                     <h2 class="mb-lg-0 text-center text-lg-left">Especialista en Mercados de Capitales</h2>
+                  </div>
+                  <div class="col-lg-3 text-center text-lg-right">
+                     <a href="contact.html" class="boxed-btn"><span>Contacto</span></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="cta-overlay"></div>
+      </div>
+      <!--   cta section end    -->
+      
+      
+      <!--  service section start  -->
+      <div class="service-section home-3">
+         <div class="container">
+            <span class="title">Pregunta Nº 1</span>
+            <h2 class="subtitle">¿Cuál es su nivel de tolerancia al riesgo en una situación de volatilidad del mercado de valores?</h2>
+            <div class="services">
+               <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single-service wow fadeInUp" data-wow-duration="1.5s">
+
+                        <div class="service-txt">
+                           <h4 class="service-title">Prefiero mantener mi dinero en inversiones seguras y de bajo riesgo.</h4>
+
+
+                         
+
+                           <form method="POST" action="">
+                              {% csrf_token %}
+                              <input type="checkbox" name="checkbox1" id="checkbox1" onclick="updateCheckboxes1()"> Respuesta 1<br>
+                              
+                              
+                          
+
+                            
+                              
+                              
+
+                           
+                          
+                          
+                          
+                           
+                              
+                          
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single-service wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
+           
+                        <div class="service-txt">
+                           <h4 class="service-title"> Prefiero invertir en una combinación de activos seguros y de mayor riesgo que me permita obtener una rentabilidad moderada sin exponerme a un alto nivel de volatilidad.</h4>
+                           <input type="checkbox" name="checkbox2" id="checkbox2" onclick="updateCheckboxes2()"> Respuesta 2<br>
+
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single-service wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".4s">
+                   
+                        <div class="service-txt">
+                           <h4 class="service-title">Tengo una aversión muy alta al riesgo en una situación de volatilidad del mercado de valores. Prefiero invertir en activos de bajo riesgo y seguridad financiera.</h4>
+                           <input type="checkbox" name="checkbox3" id="checkbox3" onclick="updateCheckboxes3()"> Respuesta 3<br>
+
+                        </div>
+                     </div>
+                  </div>
+              
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <!--  service section end  -->
+            <!--  service section start  -->
+      <div id="preg2" class="service-section home-3" >
+         <div  class="container">
+            <span  class="title">Pregunta Nº2:</span>
+            <h2 class="subtitle">¿Cuánto tiempo estaría dispuesto a esperar antes de vender su portafolio de inversión después de una caída significativa en el valor del mercado?</h2>
+            <div class="services">
+               <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single-service wow fadeInUp" data-wow-duration="1.5s">
+
+                        <div class="service-txt">
+                           <h4 class="service-title">Esperaría al menos un par de años antes de vender mi portafolio de inversión después de una caída significativa en el valor del mercado.</h4>
+                
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single-service wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
+           
+                        <div class="service-txt">
+                           <h4 class="service-title"> Esperaría entre uno y dos años antes de vender mi portafolio de inversión después de una caída significativa en el valor del mercado.</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single-service wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".4s">
+                   
+                        <div class="service-txt">
+                           <h4 class="service-title">En caso de una caída significativa en el valor del mercado, estaría dispuesto a esperar varios años antes de vender mi portafolio de inversión para recuperar las pérdidas.</h4>
+
+
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--  service section end  -->
+      
+            <!--  service section start  -->
+            <div class="service-section home-3">
+               <div class="container">
+                  <span class="title">Pregunta Nº3:</span>
+                  <h2 class="subtitle">¿Cómo afectaría una caída en el valor de su portafolio de inversión en su estado de ánimo y bienestar emocional?</h2>
+                  <div class="services">
+                     <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                           <div class="single-service wow fadeInUp" data-wow-duration="1.5s">
+      
+                              <div class="service-txt">
+                                 <h4 class="service-title">Una caída en el valor de mi portafolio de inversión tendría un impacto negativo en mi estado de ánimo y bienestar emocional.</h4>
+                      
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                           <div class="single-service wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
+                 
+                              <div class="service-txt">
+                                 <h4 class="service-title"> Una caída en el valor de mi portafolio de inversión tendría un impacto negativo en mi estado de ánimo y bienestar emocional, pero estoy dispuesto a aceptar cierto nivel de riesgo y volatilidad en mis inversiones.</h4>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                           <div class="single-service wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".4s">
+                         
+                              <div class="service-txt">
+                                 <h4 class="service-title">Una caída en el valor de mi portafolio de inversión tendría un impacto significativo en mi estado de ánimo y bienestar emocional, ya que soy muy sensible a las pérdidas financieras.</h4>
+
+      
+                              </div>
+                           </div>
+                        </div>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--  service section end  -->
+            
+            <!--  service section start  -->
+      <div class="service-section home-3">
+         <div class="container">
+            <span class="title">Pregunta Nº4:</span>
+            <h2 class="subtitle">¿Cuál es su nivel de conocimiento sobre el mercado de valores y cómo afectaría esto su capacidad para tomar decisiones de inversión informadas?</h2>
+            <div class="services">
+               <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single-service wow fadeInUp" data-wow-duration="1.5s">
+
+                        <div class="service-txt">
+                           <h4 class="service-title">Tengo un conocimiento limitado sobre el mercado de valores y esto puede limitar mi capacidad para tomar decisiones de inversión informadas.</h4>
+                
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single-service wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
+           
+                        <div class="service-txt">
+                           <h4 class="service-title"> Tengo un conocimiento moderado sobre el mercado de valores, pero busco informarme constantemente para tomar decisiones de inversión informadas.</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single-service wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".4s">
+                   
+                        <div class="service-txt">
+                           <h4 class="service-title">Tengo un conocimiento limitado sobre el mercado de valores, lo que puede limitar mi capacidad para tomar decisiones de inversión informadas y aumentar mi aversión al riesgo.</h4>
+
+
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--  service section end  -->
+      
+            <!--  service section start  -->
+            <div class="service-section home-3">
+               <div class="container">
+                  <span class="title">Pregunta Nº5:</span>
+                  <h2 class="subtitle">¿Qué tan importante es la rentabilidad de su inversión en comparación con la estabilidad de su portafolio?</h2>
+                  <div class="services">
+                     <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                           <div class="single-service wow fadeInUp" data-wow-duration="1.5s">
+      
+                              <div class="service-txt">
+                                 <h4 class="service-title">La estabilidad de mi portafolio es más importante para mí que la rentabilidad.</h4>
+                      
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                           <div class="single-service wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
+                 
+                              <div class="service-txt">
+                                 <h4 class="service-title">La rentabilidad de mi inversión es importante, pero la estabilidad de mi portafolio es igualmente importante para mí.</h4>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                           <div class="single-service wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".4s">
+                         
+                              <div class="service-txt">
+                                 <h4 class="service-title">La estabilidad de mi portafolio es extremadamente importante para mí, y estoy dispuesto a sacrificar la rentabilidad para mantener un alto nivel de seguridad financiera.</h4>
+
+      
+                              </div>
+                           </div>
+                        </div>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--  service section end  -->
+            
+            <!--  service section start  -->
+      <div class="service-section home-3">
+         <div class="container">
+            <span class="title">Pregunta Nº6:</span>
+            <h2 class="subtitle">¿Está dispuesto a asumir mayores riesgos con su inversión en el mercado de valores si esto significa la posibilidad de obtener mayores ganancias?</h2>
+            <div class="services">
+               <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single-service wow fadeInUp" data-wow-duration="1.5s">
+
+                        <div class="service-txt">
+                           <h4 class="service-title">No estoy dispuesto a asumir mayores riesgos con mi inversión en el mercado de valores, incluso si esto significa la posibilidad de obtener mayores ganancias.</h4>
+                
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single-service wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
+           
+                        <div class="service-txt">
+                           <h4 class="service-title">Estoy dispuesto a asumir cierto nivel de riesgo en mi inversión en el mercado de valores, pero no en exceso, incluso si esto significa la posibilidad de obtener mayores ganancias.</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single-service wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".4s">
+                   
+                        <div class="service-txt">
+                           <h4 class="service-title">No estoy dispuesto a asumir mayores riesgos en mi inversión en el mercado de valores, ya que la posibilidad de obtener mayores ganancias no compensa la posibilidad de grandes pérdidas.</h4>
+
+
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--  service section end  -->
+      
+            <!--  service section start  -->
+            <div class="service-section home-3">
+               <div class="container">
+                  <span class="title">Pregunta Nº7:</span>
+                  <h2 class="subtitle">¿Ha experimentado pérdidas significativas en el mercado de valores en el pasado y cómo afectó esto su disposición a tomar riesgos en el futuro?</h2>
+                  <div class="services">
+                     <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                           <div class="single-service wow fadeInUp" data-wow-duration="1.5s">
+      
+                              <div class="service-txt">
+                                 <h4 class="service-title"> No he experimentado pérdidas significativas en el mercado de valores en el pasado, pero tengo miedo de que eso suceda en el futuro.</h4>
+                      
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                           <div class="single-service wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
+                 
+                              <div class="service-txt">
+                                 <h4 class="service-title">He experimentado algunas pérdidas en el mercado de valores en el pasado, pero no han sido significativas. Esto no ha afectado significativamente mi disposición a tomar riesgos en el futuro.</h4>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                           <div class="single-service wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".4s">
+                         
+                              <div class="service-txt">
+                                 <h4 class="service-title">He experimentado pérdidas significativas en el mercado de valores en el pasado, lo que ha aumentado mi aversión al riesgo y me ha hecho más cauteloso al tomar decisiones de inversión.</h4>
+
+      
+                              </div>
+                           </div>
+                        </div>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--  service section end  -->
+            
+            <!--  service section start  -->
+      <div class="service-section home-3">
+         <div class="container">
+            <span class="title">Pregunta Nº8:</span>
+            <h2 class="subtitle">¿Qué nivel de diversificación tiene su portafolio de inversión y cómo afectaría esto su capacidad para gestionar el riesgo en una situación de volatilidad del mercado?</h2>
+            <div class="services">
+               <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single-service wow fadeInUp" data-wow-duration="1.5s">
+
+                        <div class="service-txt">
+                           <h4 class="service-title">Tengo un nivel moderado de diversificación en mi portafolio de inversión, lo que me permite gestionar mejor el riesgo en una situación de volatilidad del mercado.</h4>
+                
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single-service wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
+           
+                        <div class="service-txt">
+                           <h4 class="service-title">Tengo un nivel alto de diversificación en mi portafolio de inversión, lo que me permite gestionar mejor el riesgo en una situación de volatilidad del mercado.</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single-service wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".4s">
+                   
+                        <div class="service-txt">
+                           <h4 class="service-title">Tengo un alto nivel de diversificación en mi portafolio de inversión, lo que me permite gestionar mejor el riesgo en una situación de volatilidad del mercado y reducir las pérdidas potenciales.</h4>
+
+
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--  service section end  -->
+      
+            <!--  service section start  -->
+            <div class="service-section home-3">
+               <div class="container">
+                  <span class="title">Pregunta Nº9:</span>
+                  <h2 class="subtitle">¿Cuál es su horizonte de inversión y cómo afectaría esto su disposición a tomar riesgos en el mercado de valores?</h2>
+                  <div class="services">
+                     <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                           <div class="single-service wow fadeInUp" data-wow-duration="1.5s">
+      
+                              <div class="service-txt">
+                                 <h4 class="service-title">Mi horizonte de inversión es a largo plazo, por lo que no estoy dispuesto a tomar riesgos innecesarios que puedan afectar negativamente mi inversión en el futuro.</h4>
+                      
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                           <div class="single-service wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
+                 
+                              <div class="service-txt">
+                                 <h4 class="service-title">Mi horizonte de inversión es a largo plazo, lo que me permite estar dispuesto a asumir cierto nivel de riesgo en el mercado de valores, pero siempre dentro de ciertos límites.</h4>
+                                 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                           <div class="single-service wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".4s">
+                         
+                              <div class="service-txt">
+                                 <h4 class="service-title">Mi horizonte de inversión es a largo plazo, pero aún así no estoy dispuesto a tomar grandes riesgos en el mercado de valores debido a mi alta aversión al riesgo.</h4>
+
+      
+                              </div>
+                           </div>
+                        </div>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--  service section end  -->
+            
+            <!--  service section start  -->
+      <div class="service-section home-3">
+         <div class="container">
+            <span class="title">Pregunta Nº10:</span>
+            <h2 class="subtitle">¿Ha consultado a un asesor financiero o experto en inversiones para obtener asesoramiento sobre cómo manejar la volatilidad del mercado de valores?</h2>
+            <div class="services">
+               <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single-service wow fadeInUp" data-wow-duration="1.5s">
+
+                        <div class="service-txt">
+                           <h4 class="service-title"> Sí, he consultado a un asesor financiero o experto en inversiones para obtener asesoramiento sobre cómo manejar la volatilidad del mercado de valores y seguiré sus recomendaciones.</h4>
+                
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single-service wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
+           
+                        <div class="service-txt">
+                           <h4 class="service-title">Sí, he consultado a un asesor financiero o experto en inversiones para obtener asesoría</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="single-service wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".4s">
+                   
+                        <div class="service-txt">
+                           <h4 class="service-title">Sí, he consultado a un asesor financiero o experto en inversiones para obtener asesoramiento sobre cómo manejar la volatilidad del mercado de valores y seguiré sus recomendaciones.</h4>
+
+
+                        </div>
+                     </div>
+                  </div>
+                  <button type="submit" name="button_clicked" value="clicked">Click Me</button>
+               </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--  service section end  -->
+      
+      
+      <!--   quote section start    -->
+      <div class="quote-section quote-bg">
+         <div class="container">
+            <div class="row">
+               <div class="offset-lg-5 col-lg-7">
+                  <div class="quote-form-section">
+                     <span class="title">FORMULARIO</span>
+                     <h2 class="subtitle">CONTACTO</h2>
+                     <form action="/registrarcurso/" method="post">{% csrf_token %}
+                        <div class="row">
+                           <div class="col-lg-6">
+                              <div class="form-element"><input name="name" type="text" placeholder="You name"required></div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="form-element">
+                                 <div class="select-wrapper">
+                                    <select name="freight">
+                                       <option value="" selected disabled>Select a Freight</option>
+                                       <option value="">Air Freight</option>
+                                       <option value="">Ocean Freight</option>
+                                       <option value="">Road Freight</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="form-element"><input name="email" type="email" placeholder="Email" required></div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="form-element"><input name="phone" type="text" placeholder="Phone"required></div>
+                           </div>
+                           <div class="col-lg-12">
+                              <div class="form-element mb-0"><button type="submit" class="boxed-btn"><span>Submit</span></button></div>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--   quote section end    -->
+      
+      
+      <!--   news section start    -->
+      <div class="news-section">
+         <div class="container">
+            <span class="title">Latest blog</span>
+            <h2 class="subtitle">Inside The News</h2>
+            <div class="row">
+               <div class="col-lg-4 col-md-6">
+                  <div class="single-news wow fadeInRight" data-wow-duration="1.5s">
+                     <img src="{% static 'img/news-1.jpg' %}" alt="">
+                     <div class="news-txt">
+                        <span class="date">November 05, 2018  -  BY Admin</span>
+                        <a href="blog-details.html" class="title">
+                           <h3>Flexible shipping are increasing day by day gradually...</h3>
+                        </a>
+                        <a class="readmore" href="blog-details.html">Read More</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="single-news wow fadeInRight" data-wow-duration="1.5s" data-wow-delay=".2s">
+                     <img src="{% static 'img/news-2.jpg' %}" alt="">
+                     <div class="news-txt">
+                        <span class="date">November 05, 2018  -  BY Admin</span>
+                        <a href="blog-details.html" class="title">
+                           <h3>Big warehouse are most friendly for  new shipping..</h3>
+                        </a>
+                        <a class="readmore" href="blog-details.html">Read More</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <div class="single-news wow fadeInRight" data-wow-duration="1.5s" data-wow-delay=".4s">
+                     <img src="{% static 'img/news-3.jpg' %}" alt="">
+                     <div class="news-txt">
+                        <span class="date">November 05, 2018  -  BY Admin</span>
+                        <a href="blog-details.html" class="title">
+                           <h3>Keep your product in storage for long time...</h3>
+                        </a>
+                        <a class="readmore" href="blog-details.html">Read More</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--   news section end    -->
+      
+      
+      <!--   footer section start    -->
+      <footer>
+         <div class="container">
+            <div class="top-footer">
+               <div class="row">
+                  <div class="col-xl-4 col-lg-4">
+                     <div class="logo-wrapper"><img src="{% static 'img/footer_logo.png' %}" alt=""></div>
+                     <p>Transgo shipping offers a host of logistic management services and supply chain & provide innovative solutions with the best. </p>
+                  </div>
+                  <div class="offset-xl-1 col-xl-2 col-lg-2">
+                     <h4>Useful Links</h4>
+                     <ul class="userful-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="services.html">Service</a></li>
+                        <li><a href="blogs.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-xl-2 col-lg-2">
+                     <h4>Services</h4>
+                     <ul class="userful-links">
+                        <li><a href="#">Air Freight</a></li>
+                        <li><a href="#">OCEAN Freight</a></li>
+                        <li><a href="#">WAREHOUSING</a></li>
+                        <li><a href="#">STORAGE</a></li>
+                        <li><a href="#">ROAD Freight</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-xl-3 col-lg-4">
+                     <h4>Contact Us</h4>
+                     <div class="footer-contact">
+                        <div class="contact-info">
+                           <div class="icon-wrapper"><i class="flaticon-placeholder"></i></div>
+                           <p>143 castle road 517 district, kiyev port south Canada</p>
+                        </div>
+                        <div class="contact-info">
+                           <div class="icon-wrapper"><i class="flaticon-call"></i></div>
+                           <p>+00 12 123 4567</p>
+                        </div>
+                        <div class="contact-info">
+                           <div class="icon-wrapper"><i class="flaticon-email"></i></div>
+                           <p>Info@yourmail.com</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="bottom-footer">
+               <p class="text-center">© Copyrights 2019 Transpix. All rights reserved.</p>
+            </div>
+         </div>
+      </footer>
+      <!--   footer section end    -->
+      
+      
+      <!-- preloader section start -->
+      <div class="loader-container">
+         <span class="loader">
+         <span class="loader-inner"></span>
+         </span>
+      </div>
+      <!-- preloader section end -->
+      
+      
+      <!-- back to top area start -->
+      <div class="back-to-top">
+         <i class="fas fa-chevron-up"></i>
+      </div>
+      <!-- back to top area end --> 
+      
+         
+               
+      <!-- popper js -->
+      <script src="{% static 'js/popper.min.js' %}"></script>
+      <!-- bootstrap js -->
+      <script src="{% static 'js/bootstrap.min.js' %}"></script>
+      <!-- owl carousel js -->
+      <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+      <!-- slicknav js -->
+      <script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
+      <!-- wow js -->
+      <script src="{% static 'js/wow.min.js' %}"></script>
+      <!-- main js -->
+      <script src="{% static 'js/main.js' %}"></script>
+      <script>
+         function updateCheckboxes1() {
+             var checkbox1 = document.getElementById('checkbox1');
+             var checkbox2 = document.getElementById('checkbox2');
+             var checkbox3 = document.getElementById('checkbox3');
+             if (checkbox1.checked) {
+                 checkbox2.checked = false;
+                 checkbox3.checked = false;
+               }}
+
+         function updateCheckboxes2() {
+             var checkbox1 = document.getElementById('checkbox1');
+             var checkbox2 = document.getElementById('checkbox2');
+             var checkbox3 = document.getElementById('checkbox3');
+             if (checkbox2.checked) {
+                 checkbox1.checked = false;
+                 checkbox3.checked = false;
+         }}
+
+         function updateCheckboxes3() {
+             var checkbox1 = document.getElementById('checkbox1');
+             var checkbox2 = document.getElementById('checkbox2');
+             var checkbox3 = document.getElementById('checkbox3');
+             if (checkbox3.checked) {
+                 checkbox1.checked = false;
+                 checkbox2.checked = false;
+         }}
+            
+         </script>
+   </body>
+</html>
