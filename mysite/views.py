@@ -1,7 +1,6 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render
 from .models import Curso
-from django.http import HttpResponse
-from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.csrf import csrf_protect
 
 # - Homepage
 
@@ -39,8 +38,7 @@ def test(request):
 
 
 
-
-
+@csrf_protect
 def your_view_name(request):
         resultado = 0
         respuestas = 0 
