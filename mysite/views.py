@@ -2,7 +2,7 @@ from django.shortcuts import render,redirect
 from .models import Curso
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
-from .models import Curso1
+
 # - Homepage
 
 def home(request):
@@ -27,12 +27,12 @@ def medio(request):
     return render(request, "medio.html", {"cursos": cursos})
 
 def alto(request):
-    print('river')
+    
     return render(request, "alto.html")
 
 def test(request):
     
-    print('test')
+    
     return render(request, "test.html")
 
 
@@ -42,17 +42,45 @@ def test(request):
 
 
 def your_view_name(request):
-    if request.method == 'POST':
-        if request.POST.get('button_clicked') == 'clicked' and request.POST.get('checkbox3'):
-            print('river')
-            pass
-        else:
-            print('river2')
-            # Do something else if the button is clicked but the checkbox is not checked,
-            # or if the button is not clicked at all
-            pass
-
-    return render(request, 'test.html')
+        resultado = 0
+        respuestas = 0 
+        for i in range(1, 31):
+            check = str(f'checkbox{i}')
+            if request.POST.get('button_clicked') == 'clicked' and request.POST.get(check):
+                      
+                
+                bajo = 1
+                medio=50
+                alto=100
+                
+            
+                if i % 3  == 1:  
+                    
+                    resultado = resultado + bajo
+                    respuestas = respuestas + 1
+                if i % 3 == 2:
+                    
+        
+                    resultado = resultado + medio
+                    respuestas = respuestas + 1
+                    
+                if i % 3 == 0:
+                    
+                    
+                    resultado = resultado + alto
+                    respuestas = respuestas + 1
+        
+ 
+        if respuestas !=10:
+            
+            
+            resultado = 404
+            print(respuestas)
+        if respuestas == 0:
+            resultado = 405
+   
+     
+        return render(request, 'test.html',{'variable': resultado})
 
 
 
