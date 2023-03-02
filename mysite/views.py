@@ -77,7 +77,8 @@ def your_view_name(request):
         if respuestas == 0:
             resultado = 405
    
-     
+        else:
+            resultado = resultado/10
         return render(request, 'test.html',{'variable': resultado})
 
 
