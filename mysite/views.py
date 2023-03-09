@@ -11,6 +11,10 @@ def home(request):
 
     options = Options()
     options.headless = True
+    options.add_argument("https://chromium.org")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--start-maximized")
     driver = webdriver.Chrome(options=options)
     driver.get("https://www.ambito.com/")
 
