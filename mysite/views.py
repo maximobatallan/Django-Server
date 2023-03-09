@@ -1,12 +1,25 @@
 from django.shortcuts import render
 from .models import Curso
 from django.views.decorators.csrf import csrf_exempt
-
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 # - Homepage
 
+@csrf_exempt
 def home(request):
-    cursos = Curso.objects.all()
-    return render(request, 'index.html', {"cursos": cursos})
+
+    options = Options()
+    options.headless = True
+    driver = webdriver.Chrome(options=options)
+    driver.get("https://www.ambito.com/")
+
+    element = driver.find_element(By.XPATH, value='//*[@id="mainHeader"]/div/div[3]/div/ul/li[5]/span[3]')
+    element1 = driver.find_element(By.XPATH, value='//*[@id="mainHeader"]/div/div[3]/div/ul/li[2]/span[4]')
+    driver.quit
+
+
+    return render(request, 'index.html', {"riesgopais": element.text, "dolar": element1.text},)
 
 def registrarCurso(request):
     email= request.POST['email']
@@ -40,6 +53,28 @@ def test(request):
 
 @csrf_exempt
 def your_view_name(request):
+    
+        options = Options()
+        options.headless = True
+        driver = webdriver.Chrome(options=options)
+        driver.get("https://www.ambito.com/")
+
+        # Encontrar el elemento span por su etiqueta y texto de anclaje
+
+
+
+
+        element = driver.find_element(By.XPATH, value='//*[@id="mainHeader"]/div/div[3]/div/ul/li[5]/span[3]')
+
+
+
+
+        # Extraer el valor del elemento
+        #valor = element.find_element("xpath",'//*[@id="mainHeader"]/div/div[3]/div/ul/li[5]/span[3]').text
+        print(element.text)
+
+        # Cerrar el navegador
+        driver.quit()
         resultado = 0
         respuestas = 0 
         for i in range(1, 31):
@@ -79,7 +114,7 @@ def your_view_name(request):
    
         else:
             resultado = resultado/10
-        return render(request, 'test.html',{'variable': resultado})
+        return render(request, 'test.html',{'variable': element})
 
 
 
