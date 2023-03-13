@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>MB Assets, Informacion Financiera Bursatil</title>
       <!-- favicon -->
-      <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/x-icon">
+      <link rel="shortcut icon" href="{% static 'img/midjoourney/image31.png' %}" type="image/x-icon">
       <!-- bootstrap css -->
       
       <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
@@ -44,12 +44,12 @@
                   <div class="col-lg-6">
                      <div class="contact-infos">
                         <div class="email">
-                           <div class="icon-wrapper"><i class="flaticon-call"></i></div>
-                           <div>+ 549 11 xxx xxx</div>
+                           <div  class="icon-wrapper"><i class="flaticon-call"></i></div>
+                           <a href="https://wa.me/5491123965421">+549 112396 5421</a>
                         </div>
                         <div class="phone">
                            <div class="icon-wrapper"><i class="flaticon-email"></i></div>
-                           <div>Support@mail.com</div>
+                           <div>maximobatallan@gmail.com</div>
                         
                          
                         </div>
@@ -62,12 +62,11 @@
                   <div class="col-lg-6">
                      <div class="right-content">
                         <ul class="social-links">
-                           <li><a href="#"><div>Riesgo Pais: {{ riesgopais }}</div></i></a></li>
-                           <li><a href="#"><div>Dolar Blue: {{ dolar }}</div></i></a></li>
+                           <li><a href="#"><div>Riesgo Pais: 2207</div></i></a></li>
+                           <li><a href="#"><div>Dolar Blue: $373</div></i></a></li>
+                           <li><a href="#"><div>BTC: ${{ btc }}</div></i></a></li>
+                           <li><a href="https://www.linkedin.com/in/maximo-batallan-9a2508103/"><i class="fab fa-linkedin-in"></i></a></li>
                            
-                           <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                           <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                           <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                            
                         </ul>
                         <div class="language">
@@ -92,7 +91,7 @@
                   <div class="col-lg-3 col-6">
                      <div class="logo-wrapper">
                         <div class="logo-wrapper-inner">
-                           <a href="index.html"><img src="{% static 'img/logo-3.png' %}" alt=""></a>
+                           <a href="{% url 'index' %}"><img src="{% static 'img/logo-3.png' %}" alt=""></a>
                         </div>
                      </div>
                   </div>
@@ -103,44 +102,38 @@
                               <nav class="main-menu" id="mainMenuHome3">
                                  <ul>
                                                                         <li>
-                                       <a href="#">Inicio</a>
+                                       <a href="{% url 'index' %}">Inicio</a>
                                     </li>
                                     
 
                                     <li class="dropdown">
                                        <a href="#">Servicios</a>
                                        <ul>
-                                          <li><a href="bajo.html">Perfil de bajo riesgo</a></li>
-                                          <li><a href="medio.html">Perfil de riesgo moderado</a></li>
-                                          <li><a href="alto.html">Perfil de riesgo alto</a></li>
+                                          <li><a href="{% url 'bajo' %}">Perfil de bajo riesgo</a></li>
+                                          <li><a href="{% url 'medio' %}">Perfil de riesgo moderado</a></li>
+                                          <li><a href="{% url 'alto' %}">Perfil de riesgo alto</a></li>
                                        </ul>
                                     </li>
                                     <li class="dropdown">
                                        <a href="#">Noticias</a>
                                        <ul>
-                                          <li><a href="blogs.html">Educativo</a></li>
-                                          <li><a href="blog-grid.html">Indices</a></li>
-                                          <li><a href="blog-grid-sidebar.html">Mercados Bursatiles</a></li>
-                                          <li><a href="Cripto.html">Criptomercado</a></li>
-                                          <li><a href="blog-details.html">informacion de valor</a></li>
+                                          <li><a href="#">Educativo</a></li>
+                                          <li><a href="#">Indices</a></li>
+                                          <li><a href="#">Mercados Bursatiles</a></li>
+                                          <li><a href="#">Criptomercado</a></li>
+                                          <li><a href="#">informacion de valor</a></li>
                                        </ul>
                                     </li>
                                     <li class="dropdown">
-                                       <a href="test.html">Test de Aversión Free!</a>
+                                       <a href="{% url 'button_clicked' %}">Test de Aversión Free!</a>
                                        <ul>
-                                          <li><a href="test.html">¡Realizar Test de Aversión en 5 minutos!</a></li>
+                                          <li><a href="{% url 'button_clicked' %}">¡Realizar Test de Aversión en 5 minutos!</a></li>
 
                                        </ul>
                                     </li>
                               </nav>
                               <div id="mobileMenuHome3"></div>
-                              <ul class="search-cart-area">
-                                 <li class="search-icon"><a href="#"><i class="flaticon-search"></i></a></li>
-                                 <li class="shopping-icon">
-                                    <a href="#"><i class="flaticon-shopping-cart-black-shape"></i></a>
-                                    <span class="count">0</span>
-                                 </li>
-                              </ul>
+
                            </div>
                         </div>
                      </div>
@@ -152,29 +145,22 @@
       <!--   header area end   -->
       
       
-      <!--   search bar popup start   -->
-      <div class="search-popup">
-         <form class="search-form" action="#">
-            <div class="form-element"><input type="text" placeholder="Type your search keyword"></div>
-         </form>
-         <div class="search-popup-overlay" id="searchOverlay"></div>
-         <button class="search-close-btn" id="searchCloseBtn"><i class="fas fa-times"></i></button>
-      </div>
-      <!--   search bar popup end   -->  
+ 
       
       
       <!--  hero area start  -->
       <div class="hero-area home-3 home-6">
          <div class="hero-carousel owl-carousel owl-theme">
-            <div class="single-hero-item hero-bg-3">
+            <div class="single-hero-item hero-bg">
                <div class="container">
                   <div class="row">
                      <div class="col-xl-6 col-lg-8">
                         <div class="hero-txt">
                            <span>MB Assets</span>
-                           <h1>Información Financiera</h1>
+                           <h1>Información Financiera <br></h1>
                            
-                           <a href="services.html" class="boxed-btn"><span>Servicios</span></a>
+                           <a href="#servicios" class="boxed-btn"><span>Servicios</span></a>
+                           <br><br><br><br><br><br>
                         </div>
                      </div>
                   </div>
@@ -186,23 +172,23 @@
                   <div class="row">
                      <div class="col-xl-6 col-lg-8">
                         <div class="hero-txt">
-                           <span>We are transpix</span>
-                           <h1>No# 1 solution for transport</h1>
-                           <a href="services.html" class="boxed-btn"><span>SEE SERVICES</span></a>
+                           <span>Test de Aversión</span>
+                           <h1>Nivel de aversión al riesgo en 5 minutos</h1>
+                           <a href="test.html" class="boxed-btn"><span>Iniciar Test</span></a>
                         </div>
                      </div>
                   </div>
                </div>
                <div class="hero-overlay"></div>
             </div>
-            <div class="single-hero-item hero-bg-2">
+            <div class="single-hero-item hero-bg">
                <div class="container">
                   <div class="row">
                      <div class="col-xl-6 col-lg-8">
                         <div class="hero-txt">
-                           <span>We are transpix</span>
-                           <h1>No# 1 solution for transport</h1>
-                           <a href="services.html" class="boxed-btn"><span>SEE SERVICES</span></a>
+                           <span>Contactenos</span>
+                           <h1>Envianos su consulta o sugerencia</h1><br><br>
+                           <a href="#formulario" class="boxed-btn"><span>Contacto</span></a>
                         </div>
                      </div>
                   </div>
@@ -223,7 +209,7 @@
                      <h2 class="mb-lg-0 text-center text-lg-left">Especialista en Mercados de Capitales</h2>
                   </div>
                   <div class="col-lg-3 text-center text-lg-right">
-                     <a href="contact.html" class="boxed-btn"><span>Contacto</span></a>
+                     <a href="#formulario" class="boxed-btn"><span>Contacto</span></a>
                   </div>
                </div>
             </div>
@@ -235,7 +221,7 @@
       
       <!--  service section start  -->
       <div class="service-section home-3">
-         <div class="container">
+         <div id="servicios" class="container">
             <span class="title">Servicios</span>
             <h2 class="subtitle">¿Que ofrecemos?</h2>
             <div class="services">
@@ -279,7 +265,7 @@
       
       
       <!--  about section start  -->
-      <div class="about-section home-3">
+      <div id = "nosotros" class="about-section home-3">
          <div class="container">
             <div class="row">
                <div class="col-lg-5">
@@ -337,173 +323,11 @@
       </div>
       <!--  about section end  -->
       
-      
-      <!--  testimonial section start  -->
-      <div class="testimonial-section home-3">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-6">
-                  <span class="title">Testimonial</span>
-                  <h2 class="subtitle">WHAT THEY SAY</h2>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="testimonial-carousel-3 owl-carousel owl-theme">
-                     <div class="single-testimonial">
-                        <div class="img-wrapper"><img src="{% static 'img/home_3/client_1.jpg' %}" alt=""></div>
-                        <div class="client-desc">
-                           <p class="icon-wrapper"><i class="flaticon-quote-left"></i></p>
-                           <p class="comment">They provide innovative solutions with the best. tempor incididunt utla bore et dolor tempor incididunt .</p>
-                           <h5 class="name">mARIA ALEN</h5>
-                           <p class="rank">Director, art media</p>
-                        </div>
-                     </div>
-                     <div class="single-testimonial">
-                        <div class="img-wrapper"><img src="{% static 'img/home_3/client_2.jpg' %}" alt=""></div>
-                        <div class="client-desc">
-                           <p class="icon-wrapper"><i class="flaticon-quote-left"></i></p>
-                           <p class="comment">They provide innovative solutions with the best. tempor incididunt utla bore et dolor tempor incididunt .</p>
-                           <h5 class="name">Jonathon doe</h5>
-                           <p class="rank">Director, art media</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!--  testimonial section end  -->
-      
-      
-
-      
-      
-      <!--   faq section start    -->
-      <div class="faq-section home-3">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-6">
-                  <div class="targets">
-                     <div class="box wow fadeInUp" data-wow-duration="1.5s">
-                        <div class="icon-wrapper"><i class="flaticon-external-link-square-with-an-arrow-in-right-diagonal"></i></div>
-                        <div class="box-details">
-                           <h4>Our mission</h4>
-                           <p>We offers a host of logistic management services and supply chain solutions. consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
-                        </div>
-                     </div>
-                     <div class="box wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
-                        <div class="icon-wrapper"><i class="flaticon-check"></i></div>
-                        <div class="box-details">
-                           <h4>Our Vision</h4>
-                           <p>We offers a host of logistic management services and supply chain solutions. consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="offset-lg-1 col-lg-5">
-                  <span class="title">FAQS</span>
-                  <h2 class="subtitle">FREQUENTLY ASKED QUESTIONS</h2>
-                  <div class="accordion" id="accordionExample">
-                     <div class="card wow fadeInUp" data-wow-duration="1s">
-                        <div class="card-header" id="headingOne">
-                           <h2 class="mb-0">
-                              <button class="btn btn-link collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                              Why choose this?                         
-                              </button>
-                           </h2>
-                        </div>
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                           <div class="card-body">
-                              They offers a host of logistic management services and supply chain . We provide innovative solutions with the best.  tempor incididunt ut labore et dolor  empor tempor incididunt innovative solutions 
-                           </div>
-                        </div>
-                     </div>
-                     <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                        <div class="card-header" id="headingTwo">
-                           <h2 class="mb-0">
-                              <button class="btn btn-link collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Is it costly?
-                              </button>
-                           </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                           <div class="card-body">
-                              They offers a host of logistic management services and supply chain . We provide innovative solutions with the best.  tempor incididunt ut labore et dolor  empor tempor incididunt innovative solutions 
-                           </div>
-                        </div>
-                     </div>
-                     <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                        <div class="card-header" id="headingThree">
-                           <h2 class="mb-0">
-                              <button class="btn btn-link collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              When usally product reach
-                              </button>
-                           </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                           <div class="card-body">
-                              They offers a host of logistic management services and supply chain . We provide innovative solutions with the best.  tempor incididunt ut labore et dolor  empor tempor incididunt innovative solutions
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!--   faq section end    -->
-      
-      
-      <!--   quote section start    -->
-      <div class="quote-section quote-bg">
-         <div class="container">
-            <div class="row">
-               <div class="offset-lg-5 col-lg-7">
-                  <div class="quote-form-section">
-                     <span class="title">FORMULARIO</span>
-                     <h2 class="subtitle">CONTACTO</h2>
-                     <form action="/registrarcurso/" method="post">{% csrf_token %}
-                        <div class="row">
-                           <div class="col-lg-6">
-                              <div class="form-element"><input name="name" type="text" placeholder="You name"required></div>
-                           </div>
-                           <div class="col-lg-6">
-                              <div class="form-element">
-                                 <div class="select-wrapper">
-                                    <select name="freight">
-                                       <option value="" selected disabled>Select a Freight</option>
-                                       <option value="">Air Freight</option>
-                                       <option value="">Ocean Freight</option>
-                                       <option value="">Road Freight</option>
-                                    </select>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-lg-6">
-                              <div class="form-element"><input name="email" type="email" placeholder="Email" required></div>
-                           </div>
-                           <div class="col-lg-6">
-                              <div class="form-element"><input name="phone" type="text" placeholder="Phone"required></div>
-                           </div>
-                           <div class="col-lg-12">
-                              <div class="form-element mb-0"><button type="submit" class="boxed-btn"><span>Submit</span></button></div>
-                           </div>
-                        </div>
-                     </form>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!--   quote section end    -->
-      
-      
       <!--   news section start    -->
       <div class="news-section">
          <div class="container">
-            <span class="title">Latest blog</span>
-            <h2 class="subtitle">Inside The News</h2>
+            <span class="title">Novedades</span>
+            <h2 class="subtitle">Ultimas Noticias</h2>
             <div class="row">
                <div class="col-lg-4 col-md-6">
                   <div class="single-news wow fadeInRight" data-wow-duration="1.5s">
@@ -546,6 +370,52 @@
       </div>
       <!--   news section end    -->
       
+      <!--   quote section start    -->
+      <div id="formulario" class="quote-section quote-bg">
+         <div class="container">
+            <div class="row">
+               <div class="offset-lg-5 col-lg-7">
+                  <div class="quote-form-section">
+                     <span class="title">FORMULARIO de Contacto</span>
+                     <h2 class="subtitle">Escriba su consulta o sugerencia</h2>
+                     <form action="/registrarcurso/" method="post">{% csrf_token %}
+                        <div class="row">
+                           <div class="col-lg-6">
+                              <div class="form-element"><input name="nombre" type="text" placeholder="Nombre"required></div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="form-element">
+                                 <div class="select-wrapper">
+                                    <select name="tipo de consulta">
+                                       <option value="" selected disabled>Selecciona el tipo de consulta</option>
+                                       <option value=""></option>
+                                       <option value="">Ocean Freight</option>
+                                       <option value="">Road Freight</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="form-element"><input name="email" type="email" placeholder="Email" required></div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="form-element"><input name="phone" type="text" placeholder="Phone"required></div>
+                           </div>
+                           <div class="col-lg-12">
+                              <div class="form-element mb-0"><button type="submit" class="boxed-btn"><span>Submit</span></button></div>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--   quote section end    -->
+      
+      
+      
+      
       
       <!--   footer section start    -->
       <footer>
@@ -553,17 +423,18 @@
             <div class="top-footer">
                <div class="row">
                   <div class="col-xl-4 col-lg-4">
-                     <div class="logo-wrapper"><img src="{% static 'img/footer_logo.png' %}" alt=""></div>
-                     <p>Transgo shipping offers a host of logistic management services and supply chain & provide innovative solutions with the best. </p>
+                     <div class="logo-wrapper"><img src="{% static 'img/signature1.png' %}" alt=""></div>
+                     <p>Contador Público - CPCECABA</p>
+                     <p>Especialista en Mercado de Capitales</p>
+                     <p>Programador - Data Science</p>
                   </div>
                   <div class="offset-xl-1 col-xl-2 col-lg-2">
-                     <h4>Useful Links</h4>
+                     <h4>Links de utilidad</h4>
                      <ul class="userful-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="services.html">Service</a></li>
-                        <li><a href="blogs.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#formulario">Contacto</a></li>
                      </ul>
                   </div>
                   <div class="col-xl-2 col-lg-2">
@@ -580,23 +451,23 @@
                      <h4>Contact Us</h4>
                      <div class="footer-contact">
                         <div class="contact-info">
-                           <div class="icon-wrapper"><i class="flaticon-placeholder"></i></div>
-                           <p>143 castle road 517 district, kiyev port south Canada</p>
+                      <!--         <div class="icon-wrapper"><i class="flaticon-placeholder"></i></div>
+                       <p>143 castle road 517 district, kiyev port south Canada</p>-->
                         </div>
                         <div class="contact-info">
                            <div class="icon-wrapper"><i class="flaticon-call"></i></div>
-                           <p>+00 12 123 4567</p>
+                           <a href="https://wa.me/5491123965421"><p>+549 11 2396 5421</p></a>
                         </div>
                         <div class="contact-info">
                            <div class="icon-wrapper"><i class="flaticon-email"></i></div>
-                           <p>Info@yourmail.com</p>
+                           <p>maximobatallan@gmail.com</p>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
             <div class="bottom-footer">
-               <p class="text-center">© Copyrights 2019 Transpix. All rights reserved.</p>
+               <a href="https://www.linkedin.com/in/maximo-batallan-9a2508103/"><p class="text-center">© Copyrights 2023 Desarrollado por Maximo Batallan. Todos los Derechos Reservados.</p></a>
             </div>
          </div>
       </footer>

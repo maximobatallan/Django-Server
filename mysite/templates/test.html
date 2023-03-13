@@ -81,7 +81,7 @@
                   <div class="col-lg-3 col-6">
                      <div class="logo-wrapper">
                         <div class="logo-wrapper-inner">
-                           <a href="index.html"><img src="{% static 'img/logo-3.png' %}" alt=""></a>
+                           <a href="{% url 'index' %}"><img src="{% static 'img/logo-3.png' %}" alt=""></a>
                         </div>
                      </div>
                   </div>
@@ -92,32 +92,32 @@
                               <nav class="main-menu" id="mainMenuHome3">
                                  <ul>
                                                                         <li>
-                                       <a href="#preg2">Inicio</a>
+                                       <a href="{% url 'index' %}">Inicio</a>
                                     </li>
                                     
 
                                     <li class="dropdown">
                                        <a href="#">Servicios</a>
                                        <ul>
-                                          <li><a href="bajo.html">Perfil de bajo riesgo</a></li>
-                                          <li><a href="medio.html">Perfil de riesgo moderado</a></li>
-                                          <li><a href="alto.html">Perfil de riesgo alto</a></li>
+                                          <li><a href="{% url 'bajo' %}">Perfil de bajo riesgo</a></li>
+                                          <li><a href="{% url 'medio' %}">Perfil de riesgo moderado</a></li>
+                                          <li><a href="{% url 'alto' %}">Perfil de riesgo alto</a></li>
                                        </ul>
                                     </li>
                                     <li class="dropdown">
                                        <a href="#">Noticias</a>
                                        <ul>
-                                          <li><a href="blogs.html">Educativo</a></li>
-                                          <li><a href="blog-grid.html">Indices</a></li>
-                                          <li><a href="blog-grid-sidebar.html">Mercados Bursatiles</a></li>
-                                          <li><a href="Cripto.html">Criptomercado</a></li>
-                                          <li><a href="blog-details.html">informacion de valor</a></li>
+                                          <li><a href="#">Educativo</a></li>
+                                          <li><a href="#">Indices</a></li>
+                                          <li><a href="#">Mercados Bursatiles</a></li>
+                                          <li><a href="#">Criptomercado</a></li>
+                                          <li><a href="#">informacion de valor</a></li>
                                        </ul>
                                     </li>
                                     <li class="dropdown">
-                                       <a href="test.html">Test de Aversión Free!</a>
+                                       <a href="#preg1">Test de Aversión Free!</a>
                                        <ul>
-                                          <li><a href="test.html">¡Realizar Test de Aversión en 5 minutos!</a></li>
+                                          <li><a href="#preg1">¡Realizar Test de Aversión en 5 minutos!</a></li>
 
                                        </ul>
                                     </li>
@@ -163,41 +163,14 @@
                            <span>MB Assets</span>
                            <h1>Test de Aversion al riesgo</h1>
                            
-                           <a href="services.html" class="boxed-btn"><span>¡Comenzar ahora!</span></a>
+                           <a href="#preg1" class="boxed-btn"><span>¡Comenzar ahora!</span></a>
                         </div>
                      </div>
                   </div>
                </div>
                <div class="hero-overlay"></div>
             </div>
-            <div class="single-hero-item hero-bg">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-xl-6 col-lg-8">
-                        <div class="hero-txt">
-                           <span>We are transpix</span>
-                           <h1>No# 1 solution for transport</h1>
-                           <a href="services.html" class="boxed-btn"><span>SEE SERVICES</span></a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="hero-overlay"></div>
-            </div>
-            <div class="single-hero-item hero-bg-2">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-xl-6 col-lg-8">
-                        <div class="hero-txt">
-                           <span>We are transpix</span>
-                           <h1>No# 1 solution for transport</h1>
-                           <a href="services.html" class="boxed-btn"><span>SEE SERVICES</span></a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="hero-overlay"></div>
-            </div>
+            
          </div>
       </div>
       <!--  hero area end  -->
@@ -223,7 +196,7 @@
       
       
       <!--  service section start  -->
-      <div class="service-section home-3">
+      <div id="preg1" class="service-section home-3">
          <div class="container">
             <span class="title">Pregunta Nº 1</span>
             <h2 class="subtitle">¿Cuál es su nivel de tolerancia al riesgo en una situación de volatilidad del mercado de valores?</h2>
@@ -330,7 +303,7 @@
       <!--  service section end  -->
       
             <!--  service section start  -->
-            <div class="service-section home-3">
+            <div id="preg3" class="service-section home-3">
                <div class="container">
                   <span class="title">Pregunta Nº3:</span>
                   <h2 class="subtitle">¿Cómo afectaría una caída en el valor de su portafolio de inversión en su estado de ánimo y bienestar emocional?</h2>
@@ -374,7 +347,7 @@
             <!--  service section end  -->
             
             <!--  service section start  -->
-      <div class="service-section home-3">
+      <div id="preg4" class="service-section home-3">
          <div class="container">
             <span class="title">Pregunta Nº4:</span>
             <h2 class="subtitle">¿Cuál es su nivel de conocimiento sobre el mercado de valores y cómo afectaría esto su capacidad para tomar decisiones de inversión informadas?</h2>
@@ -417,7 +390,7 @@
       <!--  service section end  -->
       
             <!--  service section start  -->
-            <div class="service-section home-3">
+            <div id="preg5" class="service-section home-3">
                <div class="container">
                   <span class="title">Pregunta Nº5:</span>
                   <h2 class="subtitle">¿Qué tan importante es la rentabilidad de su inversión en comparación con la estabilidad de su portafolio?</h2>
@@ -459,7 +432,7 @@
             <!--  service section end  -->
             
             <!--  service section start  -->
-      <div class="service-section home-3">
+      <div id="preg6" class="service-section home-3">
          <div class="container">
             <span class="title">Pregunta Nº6:</span>
             <h2 class="subtitle">¿Está dispuesto a asumir mayores riesgos con su inversión en el mercado de valores si esto significa la posibilidad de obtener mayores ganancias?</h2>
@@ -501,7 +474,7 @@
       <!--  service section end  -->
       
             <!--  service section start  -->
-            <div class="service-section home-3">
+            <div id="preg7" class="service-section home-3">
                <div class="container">
                   <span class="title">Pregunta Nº7:</span>
                   <h2 class="subtitle">¿Ha experimentado pérdidas significativas en el mercado de valores en el pasado y cómo afectó esto su disposición a tomar riesgos en el futuro?</h2>
@@ -543,7 +516,7 @@
             <!--  service section end  -->
             
             <!--  service section start  -->
-      <div class="service-section home-3">
+      <div id="preg8" class="service-section home-3">
          <div class="container">
             <span class="title">Pregunta Nº8:</span>
             <h2 class="subtitle">¿Qué nivel de diversificación tiene su portafolio de inversión y cómo afectaría esto su capacidad para gestionar el riesgo en una situación de volatilidad del mercado?</h2>
@@ -585,7 +558,7 @@
       <!--  service section end  -->
       
             <!--  service section start  -->
-            <div class="service-section home-3">
+            <div id="preg9" class="service-section home-3">
                <div class="container">
                   <span class="title">Pregunta Nº9:</span>
                   <h2 class="subtitle">¿Cuál es su horizonte de inversión y cómo afectaría esto su disposición a tomar riesgos en el mercado de valores?</h2>
@@ -627,7 +600,7 @@
             <!--  service section end  -->
             
             <!--  service section start  -->
-      <div class="service-section home-3">
+      <div id="preg10" class="service-section home-3">
          <div class="container">
             <span class="title">Pregunta Nº10:</span>
             <h2 class="subtitle">¿Ha consultado a un asesor financiero o experto en inversiones para obtener asesoramiento sobre cómo manejar la volatilidad del mercado de valores?</h2>
