@@ -4,26 +4,32 @@ from django.views.decorators.csrf import csrf_exempt
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
+import requests
 # - Homepage
 
 @csrf_exempt
 def home(request):
 
-    options = Options()
-    options.headless = True
-    options.add_argument("https://chromium.org")
-    options.add_argument("--disable-gpu")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--start-maximized")
-    driver = webdriver.Chrome(options=options)
-    driver.get("https://www.ambito.com/")
 
-    element = driver.find_element(By.XPATH, value='//*[@id="mainHeader"]/div/div[3]/div/ul/li[5]/span[3]')
-    element1 = driver.find_element(By.XPATH, value='//*[@id="mainHeader"]/div/div[3]/div/ul/li[2]/span[4]')
-    driver.quit
+    # Insert your CoinMarketCap API key here
+    api_key = '29a110c3-96df-4dc4-9617-2776200b35b2'
 
+    # Define the URL of the API endpoint to get the BTC price
+    url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
 
-    return render(request, 'index.html', {"riesgopais": element.text, "dolar": element1.text},)
+    # Define the parameters for the API request
+    parameters = {'symbol': 'BTC'}
+
+    # Define the headers for the API request, including the API key
+    headers = {'Accepts': 'application/json', 'X-CMC_PRO_API_KEY': api_key}
+
+    # Make the API request using the requests library
+    response = requests.get(url, headers=headers, params=parameters)
+
+    # Parse the response JSON to get the BTC price
+    element2 = int(response.json()['data']['BTC']['quote']['USD']['price'])
+
+    return render(request, 'index.html', {"btc":element2},)
 
 def registrarCurso(request):
     email= request.POST['email']
@@ -58,27 +64,6 @@ def test(request):
 @csrf_exempt
 def your_view_name(request):
     
-        options = Options()
-        options.headless = True
-        driver = webdriver.Chrome(options=options)
-        driver.get("https://www.ambito.com/")
-
-        # Encontrar el elemento span por su etiqueta y texto de anclaje
-
-
-
-
-        element = driver.find_element(By.XPATH, value='//*[@id="mainHeader"]/div/div[3]/div/ul/li[5]/span[3]')
-
-
-
-
-        # Extraer el valor del elemento
-        #valor = element.find_element("xpath",'//*[@id="mainHeader"]/div/div[3]/div/ul/li[5]/span[3]').text
-        print(element.text)
-
-        # Cerrar el navegador
-        driver.quit()
         resultado = 0
         respuestas = 0 
         for i in range(1, 31):
@@ -107,18 +92,17 @@ def your_view_name(request):
                     resultado = resultado + alto
                     respuestas = respuestas + 1
         
- 
-        if respuestas !=10:
+        print(respuestas,resultado)
+        if respuestas !=10 or 0:
             
             
             resultado = 404
-            print(respuestas)
-        if respuestas == 0:
-            resultado = 405
+           
    
-        else:
+        else: 
+            
             resultado = resultado/10
-        return render(request, 'test.html',{'variable': element})
+        return render(request, 'test.html',{'variable': resultado})
 
 
 
