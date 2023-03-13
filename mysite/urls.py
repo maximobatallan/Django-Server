@@ -5,7 +5,7 @@ urlpatterns = [
 
     # - Homepage
 
-    path('', views.home, name=""),
+    path('', views.home, name="index"),
     path('bajo.html/', views.bajo,name='bajo'),
     path('medio.html/', views.medio,name='medio'),
     path('alto.html/', views.alto,name='alto'),
