@@ -127,12 +127,12 @@ button.boxed-btn {
     position: relative;
     text-transform: uppercase;
     font-size: 14px;
-    color: #fff;
+    color: #000000;
     font-weight: 600;
     padding: 15px 35px;
     text-align: center;
     border-radius: 3px;
-    background-color: #000000;
+    background-color: #ffe600;
     border: none;
     text-decoration: none;
     -webkit-transition: .5s;
@@ -142,7 +142,7 @@ button.boxed-btn {
 
 a.boxed-btn:hover,
 button.boxed-btn:hover {
-    color: #000000;
+    color: #ffe600;
 }
 
 a.boxed-btn span,
@@ -161,7 +161,7 @@ button.boxed-btn::before {
     left: 0px;
     height: 100%;
     width: 0%;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 a.boxed-btn::after,
@@ -172,7 +172,7 @@ button.boxed-btn::after {
     right: 0px;
     height: 100%;
     width: 0%;
-    background-color: #fff;
+    background-color: #ffe600;
     -webkit-transition: width .5s;
     -o-transition: width .5s;
     transition: width .5s;
@@ -247,7 +247,7 @@ h2.subtitle::after {
     position: absolute;
     width: 100px;
     height: 3px;
-    background-color: #58bed3;
+    background-color: #ffe600;
     left: 0px;
     bottom: -34px;
 }
@@ -290,13 +290,13 @@ h2.subtitle::after {
 .form-element input[type="submit"] {
     border: none;
     position: relative;
-    background-color: #58bed3;
+    background-color: #ffe600;
     color: #fff;
     padding: 12px 24px;
     text-transform: uppercase;
     font-weight: 600;
     cursor: pointer;
-    border: 1px solid #58bed3;
+    border: 1px solid #ffe600;
     font-size: 14px;
     -webkit-transition: .5s;
     -o-transition: .5s;
@@ -306,7 +306,7 @@ h2.subtitle::after {
 .form-element button[type="submit"]:hover span {
     position: relative;
     z-index: 1;
-    color: #58bed3;
+    color: #ffe600;
 }
 
 .form-element button[type="submit"]::before,
@@ -393,8 +393,8 @@ h2.subtitle::after {
     height: 40px;
     width: 40px;
     line-height: 40px;
-    background-color: #58bed3;
-    border: 1px solid #58bed3;
+    background-color: #ffe600;
+    border: 1px solid #ffe600;
     text-align: center;
     border-radius: 3px;
     cursor: pointer;
@@ -406,8 +406,8 @@ h2.subtitle::after {
 }
 
 .back-to-top:hover {
-    background-color: #fff;
-    color: #58bed3;
+    background-color: #000000;
+    color: #ffe600;
 }
 
 .back-to-top.show {
@@ -517,7 +517,7 @@ h2.subtitle::after {
     left: 50%;
     margin-top: -30px;
     margin-left: -30px;
-    border: 4px solid #58bed3;
+    border: 4px solid #ffe600;
     -webkit-animation: loader 2s infinite ease;
     animation: loader 2s infinite ease;
 }
@@ -526,7 +526,7 @@ h2.subtitle::after {
     vertical-align: top;
     display: inline-block;
     width: 100%;
-    background-color: #58bed3;
+    background-color: #ffe600;
     -webkit-animation: loader-inner 2s infinite ease-in;
     animation: loader-inner 2s infinite ease-in;
 }
@@ -654,7 +654,7 @@ h2.subtitle::after {
 }
 
 .info-bar ul.social-links li a:hover {
-    color: #58bed3;
+    color: #ffe600;
 }
 
 .header-area span.working-time {
@@ -687,7 +687,7 @@ h2.subtitle::after {
     list-style-type: none;
     padding-left: 0px;
     width: 120px;
-    background-color: #183650;
+    background-color: #000000;
     text-align: center;
     visibility: hidden;
     opacity: 0;
@@ -723,8 +723,8 @@ h2.subtitle::after {
 }
 
 .header-area .language ul.language-dropdown li a:hover {
-    background-color: #fff;
-    color: #183650;
+    background-color: #000000;
+    color: #ffe600;
 }
 
 .language a {
@@ -738,7 +738,7 @@ h2.subtitle::after {
 }
 
 .language a:hover {
-    color: #58bed3;
+    color: #ffe600;
 }
 
 .logo-wrapper {
@@ -810,7 +810,7 @@ h2.subtitle::after {
 .support-bar .support-info i {
     font-size: 30px;
     margin-right: 15px;
-    color: #58bed3;
+    color: #ffe600;
 }
 
 .support-bar .support-info h5 {
@@ -880,7 +880,7 @@ h2.subtitle::after {
     position: absolute;
     height: 5px;
     width: 5px;
-    background-color: #58bed3;
+    background-color: #ffe600;
     border-radius: 50%;
     top: 50%;
     left: -9px;
@@ -942,7 +942,7 @@ h2.subtitle::after {
 }
 
 .navbar-area nav ul li.dropdown:hover::after {
-    color: #58bed3;
+    color: #ffe600;
 }
 
 .navbar-area nav ul li.dropdown ul {
@@ -1137,7 +1137,7 @@ ul.search-cart-area {
 }
 
 .search-cart-area li a:hover {
-    color: #58bed3;
+    color: #ffe600;
 }
 
 .shopping-icon span.count {
@@ -1145,7 +1145,7 @@ ul.search-cart-area {
     top: -8px;
     right: -13px;
     color: #fff;
-    background-color: #58bed3;
+    background-color: #ffe600;
     display: inline-block;
     height: 20px;
     width: 20px;
@@ -1161,7 +1161,7 @@ ul.search-cart-area {
 
 .shopping-icon:hover span.count {
     background-color: #fff;
-    color: #58bed3;
+    color: #ffe600;
 }
 
 .sticky-navbar {
@@ -1453,7 +1453,7 @@ ul.search-cart-area {
 
 .feature-lists .single-feature i {
     font-size: 45px;
-    color: #58bed3;
+    color: #ffe600;
 }
 
 .single-feature .feature-details {
@@ -1517,8 +1517,8 @@ ul.search-cart-area {
     bottom: 100%;
     right: 100%;
     opacity: 0;
-    border-top: 2px solid #58bed3;
-    border-right: 2px solid #58bed3;
+    border-top: 2px solid #ffe600;
+    border-right: 2px solid #ffe600;
     z-index: 1;
 }
 
@@ -1539,8 +1539,8 @@ ul.search-cart-area {
     top: 100%;
     left: 100%;
     opacity: 0;
-    border-bottom: 2px solid #58bed3;
-    border-left: 2px solid #58bed3;
+    border-bottom: 2px solid #ffe600;
+    border-left: 2px solid #ffe600;
     z-index: 1;
 }
 
@@ -1585,7 +1585,7 @@ ul.search-cart-area {
 .service-carousel.owl-carousel .owl-nav button.owl-prev:hover {
     background-color: #c33c3c;
     color: #fff;
-    border: 1px solid #58bed3;
+    border: 1px solid #ffe600;
 }
 
 .service-section .single-service img {
@@ -1609,7 +1609,7 @@ ul.search-cart-area {
 }
 
 .service-section .single-service .service-txt a.readmore {
-    color: #58bed3;
+    color: #ffe600;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
@@ -1830,8 +1830,8 @@ ul.search-cart-area {
     bottom: 100%;
     right: 100%;
     opacity: 0;
-    border-top: 2px solid #58bed3;
-    border-right: 2px solid #58bed3;
+    border-top: 2px solid #ffe600;
+    border-right: 2px solid #ffe600;
 }
 
 .targets .box:hover::before {
@@ -1851,8 +1851,8 @@ ul.search-cart-area {
     top: 100%;
     left: 100%;
     opacity: 0;
-    border-bottom: 2px solid #58bed3;
-    border-left: 2px solid #58bed3;
+    border-bottom: 2px solid #ffe600;
+    border-left: 2px solid #ffe600;
 }
 
 .targets .box:hover::after {
@@ -2171,7 +2171,7 @@ footer ul.userful-links li a:hover {
     -webkit-transform: translateX(5px);
     -ms-transform: translateX(5px);
     transform: translateX(5px);
-    color: #58bed3;
+    color: #ffe600;
 }
 
 footer ul.userful-links li a::before {
@@ -2358,7 +2358,7 @@ footer .bottom-footer {
 }
 
 .home-2 .ceo-details h5 {
-    color: #58bed3;
+    color: #ffe600;
 }
 
 .home-2 .ceo-details span {
@@ -2905,8 +2905,8 @@ footer .bottom-footer {
     bottom: 100%;
     right: 100%;
     opacity: 0;
-    border-top: 2px solid #58bed3;
-    border-right: 2px solid #58bed3;
+    border-top: 2px solid #ffe600;
+    border-right: 2px solid #ffe600;
 }
 
 .home-3 .single-testimonial:hover::before {
@@ -2926,8 +2926,8 @@ footer .bottom-footer {
     top: 100%;
     left: 100%;
     opacity: 0;
-    border-bottom: 2px solid #58bed3;
-    border-left: 2px solid #58bed3;
+    border-bottom: 2px solid #ffe600;
+    border-left: 2px solid #ffe600;
 }
 
 .home-3 .single-testimonial:hover::after {
@@ -2945,7 +2945,7 @@ footer .bottom-footer {
 
 .home-3 .single-testimonial p.icon-wrapper i {
     font-size: 20px;
-    color: #58bed3;
+    color: #ffe600;
 }
 
 .home-3 .single-testimonial p.comment {
@@ -3076,7 +3076,7 @@ footer .bottom-footer {
 }
 
 .hero-carousel.owl-theme .owl-dots .owl-dot.active span {
-    background-color: #58bed3;
+    background-color: #ffe600;
 }
 
 
@@ -3200,7 +3200,7 @@ footer .bottom-footer {
 }
 
 .about-section.about .about-txt h5 {
-    color: #58bed3;
+    color: #ffe600;
 }
 
 .about-section.about .about-txt span {
@@ -3318,7 +3318,7 @@ ul.overview-points li::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
     font-size: 12px;
-    color: #58bed3;
+    color: #ffe600;
 }
 
 .category-sidebar {
@@ -3365,7 +3365,7 @@ ul.overview-points li::before {
 }
 
 .category-sidebar ul li a:hover {
-    background-color: #58bed3;
+    background-color: #ffe600;
     color: #fff;
 }
 
@@ -3395,7 +3395,7 @@ ul.overview-points li::before {
     width: 140px;
     text-transform: uppercase;
     color: #fff;
-    background-color: #58bed3;
+    background-color: #ffe600;
     border: none;
     cursor: pointer;
 }
@@ -3447,7 +3447,7 @@ ul.overview-points li::before {
 }
 
 .blog-lists .single-blog .blog-txt h3.blog-title a:hover {
-    color: #58bed3;
+    color: #ffe600;
 }
 
 .blog-lists .single-blog .blog-txt p.blog-summary {
@@ -3483,8 +3483,8 @@ ul.overview-points li::before {
 }
 
 .pagination-nav li.page-item.active a {
-    background-color: #58bed3;
-    border: 2px solid #58bed3;
+    background-color: #ffe600;
+    border: 2px solid #ffe600;
 }
 
 .blog-sidebar-widgets {
@@ -3523,7 +3523,7 @@ ul.overview-points li::before {
     float: left;
     padding: 0;
     height: 50px;
-    background-color: #58bed3;
+    background-color: #ffe600;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -3535,7 +3535,7 @@ ul.overview-points li::before {
 .searchbar button[type="submit"]:hover,
 .searchbar input[type="submit"]:hover {
     background-color: #fff;
-    color: #58bed3;
+    color: #ffe600;
 }
 
 .popular-posts-lists h4,
@@ -3591,7 +3591,7 @@ ul.overview-points li::before {
 }
 
 .popular-post-txt h5 a:hover {
-    color: #58bed3;
+    color: #ffe600;
 }
 
 .popular-post-txt small {
@@ -3628,7 +3628,7 @@ ul.overview-points li::before {
 }
 
 .category-lists ul li a:hover {
-    color: #58bed3;
+    color: #ffe600;
 }
 
 .category-lists ul li a::after {
@@ -3638,7 +3638,7 @@ ul.overview-points li::before {
     left: 0;
     font-family: 'Font Awesome 5 Free';
     font-weight: 700;
-    color: #58bed3;
+    color: #ffe600;
 }
 
 .subscribe-section {
@@ -3652,7 +3652,7 @@ ul.overview-points li::before {
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 8px;
-    color: #58bed3;
+    color: #ffe600;
     text-transform: uppercase;
 }
 
@@ -3670,7 +3670,7 @@ ul.overview-points li::before {
     left: 0;
     width: 100px;
     height: 3px;
-    background-color: #58bed3;
+    background-color: #ffe600;
 }
 
 .subscribe-section .form-element:last-child {
@@ -3750,7 +3750,7 @@ ul.overview-points li::before {
 
 .blog-details-quote {
     padding: 42px 39px;
-    border-left: 3px solid #58bed3;
+    border-left: 3px solid #ffe600;
     font-style: italic;
     line-height: 30px;
     font-size: 18px;
@@ -3849,7 +3849,7 @@ ul.overview-points li::before {
     left: 0;
     height: 3px;
     width: 70px;
-    background-color: #58bed3;
+    background-color: #ffe600;
 }
 
 .single-comment {
@@ -3907,7 +3907,7 @@ ul.overview-points li::before {
 }
 
 .single-comment .person-info .date a:hover {
-    color: #58bed3;
+    color: #ffe600;
 }
 
 .single-comment .person-info .comment {
@@ -3938,7 +3938,7 @@ ul.overview-points li::before {
     left: 0;
     height: 3px;
     width: 70px;
-    background-color: #58bed3;
+    background-color: #ffe600;
 }
 
 .reply-form-section .form-element input,
@@ -4212,7 +4212,7 @@ ul.overview-points li::before {
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
-    background-color: #58bed3;
+    background-color: #ffe600;
     color: #fff;
     -webkit-transform: rotateY(360deg);
     transform: rotateY(360deg);
@@ -4220,7 +4220,7 @@ ul.overview-points li::before {
 
 .quote-page .contact-infos .single-info .icon-wrapper i {
     font-size: 20px;
-    color: #58bed3;
+    color: #ffe600;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
@@ -4235,7 +4235,7 @@ ul.overview-points li::before {
 }
 
 .quote-page .contact-infos .single-info .icon-wrapper {
-    border: 1px solid #58bed3;
+    border: 1px solid #ffe600;
     height: 50px;
     width: 50px;
     margin-right: 15px;
@@ -4281,7 +4281,7 @@ ul.overview-points li::before {
 }
 
 .contact-section .single-info .icon-wrapper {
-    border: 1px solid #58bed3;
+    border: 1px solid #ffe600;
     height: 50px;
     width: 50px;
     line-height: 50px;
@@ -4301,14 +4301,14 @@ ul.overview-points li::before {
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
-    background-color: #58bed3;
+    background-color: #ffe600;
     -webkit-transform: rotateY(360deg);
     transform: rotateY(360deg);
 }
 
 .contact-section .single-info .icon-wrapper i {
     font-size: 20px;
-    color: #58bed3;
+    color: #ffe600;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
@@ -4415,7 +4415,7 @@ div#map {
     -webkit-transform: translateY(-20px);
     -ms-transform: translateY(-20px);
     transform: translateY(-20px);
-    background-color: #58bed3;
+    background-color: #ffe600;
 }
 
 .pricing-tables .plan:hover a {
@@ -4490,7 +4490,7 @@ div#map {
 }
 
 .pricing-tables .plan-select a {
-    background-color: #58bed3;
+    background-color: #ffe600;
     color: #ffffff;
     text-decoration: none;
     padding: 12px 20px;
@@ -4562,15 +4562,15 @@ div#map {
     font-size: 16px;
     text-decoration: none;
     margin-top: 15px;
-    background-color: #58bed3;
-    border: 1px solid #58bed3;
+    background-color: #ffe600;
+    border: 1px solid #ffe600;
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
 }
 
 .error-txt a:hover {
-    color: #58bed3;
+    color: #ffe600;
     background-color: #fff;
 }
 
@@ -5807,7 +5807,7 @@ a.cartbtn.shop:hover {
 
 .checkout .form-element button {
     padding: 11px 45px;
-    border: 1px solid #58bed3;
+    border: 1px solid #ffe600;
     display: block;
     width: 100%;
 }
