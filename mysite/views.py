@@ -1,35 +1,68 @@
 from django.shortcuts import render
 from .models import Curso
 from django.views.decorators.csrf import csrf_exempt
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
+from django.template.response import TemplateResponse
+
 import requests
 # - Homepage
 
 @csrf_exempt
 def home(request):
 
+    
+    context = {'foo': 'bar'}
+    template_name = 'index.html'
+    print('aca')
+    response = TemplateResponse(request, template_name, context=context)
+    return response
 
-    # Insert your CoinMarketCap API key here
+def home(request):
+
+  
+    # Call the first function
+    
+    template_name = 'index.html'
+  
+    
+    # Call the second function
     api_key = '29a110c3-96df-4dc4-9617-2776200b35b2'
-
-    # Define the URL of the API endpoint to get the BTC price
     url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
-
-    # Define the parameters for the API request
     parameters = {'symbol': 'BTC'}
-
-    # Define the headers for the API request, including the API key
     headers = {'Accepts': 'application/json', 'X-CMC_PRO_API_KEY': api_key}
+    response2 = requests.get(url, headers=headers, params=parameters)
+    btc_price = int(response2.json()['data']['BTC']['quote']['USD']['price'])
+    
+    # Combine the results and return the response
+    context = {'foo': 'bar', 'btc': btc_price}
+    response = TemplateResponse(request, template_name, context=context)
+    
+    return response
 
-    # Make the API request using the requests library
-    response = requests.get(url, headers=headers, params=parameters)
 
-    # Parse the response JSON to get the BTC price
-    element2 = int(response.json()['data']['BTC']['quote']['USD']['price'])
 
-    return render(request, 'index.html', {"btc":element2},)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def registrarCurso(request):
     email= request.POST['email']
@@ -62,7 +95,7 @@ def test(request):
 
 
 @csrf_exempt
-def your_view_name(request):
+def botonaversion(request):
     
         resultado = 0
         respuestas = 0 
