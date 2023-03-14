@@ -7,14 +7,7 @@ import requests
 # - Homepage
 
 @csrf_exempt
-def home(request):
 
-    
-    context = {'foo': 'bar'}
-    template_name = 'index.html'
-    print('aca')
-    response = TemplateResponse(request, template_name, context=context)
-    return response
 
 def home(request):
 
